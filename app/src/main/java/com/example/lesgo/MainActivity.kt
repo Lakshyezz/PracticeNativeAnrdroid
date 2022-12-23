@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random as Random
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun checkAnswer(isLeftButtonSelected: Boolean){
+        val ok = 4;
         val leftNum =  btnLeft.text.toString().toInt()
         val rightNum = btnRight.text.toString().toInt()
         val isAnswerCorrect = if(isLeftButtonSelected) leftNum>rightNum else rightNum> leftNum
