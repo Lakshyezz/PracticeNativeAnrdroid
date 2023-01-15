@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun createContacts(): List<Person>{
         val contacts = mutableListOf<Person>()
-        val ok = 5
+        val ok = 4
 
         for(i in 1..100){
                 contacts.add(Person("Person $i",i) )
